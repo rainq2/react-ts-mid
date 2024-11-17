@@ -1,112 +1,141 @@
 /* Game4.css */
 .game {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    padding: 20px;
-    background-color: #f9f9f9;
-  }
-  
-  .scene {
-    margin: 20px 0;
-    font-size: 18px;
-  }
-  
-  .game {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    padding: 20px;
-    background-color: #f9f9f9;
-  }
-  
-  .scene {
-    margin-bottom: 20px;
-  }
-  
-  .options {
-    margin-top: 20px;
-  }
-  
-  .options button {
-    margin: 10px;
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #2daae4; /* 繼承原本的綠色按鈕 */
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .options button:hover {
-    background-color: #2daae4; /* 保持按鈕懸停效果一致 */
-  }
-  
-  #scene {
-    margin: 20px auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  
-  #bottle {
-    position: relative;
-    width: 100px;
-    height: 200px;
-    border: 2px solid #000;
-    border-radius: 10px;
-    background-color: #fff;
-    overflow: hidden;
-  }
-  
-  #water {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    background-color: #00bfff; /* 水為藍色 */
-    transition: height 0.5s ease; /* 水位變化效果 */
-  }
-  
-  .stone,
-  .flower {
-    width: 60px;
-    height: 60px;
-    margin: 10px;
-    text-align: center;
-    line-height: 60px;
-    font-size: 14px;
-    font-weight: bold;
-    color: white;
-    border-radius: 50%;
-    cursor: grab;
-  }
-  
-  .stone {
-    background-color: #808080; /* 石頭為灰色 */
-  }
-  
-  .flower {
-    background-color: #ff69b4; /* 花朵為粉色 */
-  }
-  
-  .hidden {
-    display: none;
-  }
-  
-  .success-message {
-    color: #4caf50;
-    font-size: 18px;
-    font-weight: bold;
-    margin-top: 10px;
-    text-align: center;
-  }
-  
-  
-  #endMessage,
-  #crow-drinking,
-  #inspiration {
-    margin-top: 20px;
-    font-weight: bold;
-  }
-  
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.scene {
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+.game {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.scene {
+  margin-bottom: 20px;
+}
+
+.options {
+  margin-top: 20px;
+}
+
+.options button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #2daae4; /* 繼承原本的綠色按鈕 */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.options button:hover {
+  background-color: #2daae4; /* 保持按鈕懸停效果一致 */
+}
+
+#scene {
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#bottle {
+  position: relative;
+  width: 100px;
+  height: 200px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+#water {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #00bfff; /* 水為藍色 */
+  transition: height 0.5s ease; /* 水位變化效果 */
+}
+
+.stone,
+.flower {
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+  text-align: center;
+  line-height: 60px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  border-radius: 50%;
+  cursor: grab;
+}
+
+.stone {
+  background-color: #808080; /* 石頭為灰色 */
+}
+
+.flower {
+  background-color: #ff69b4; /* 花朵為粉色 */
+}
+
+.hidden {
+  display: none;
+}
+
+.success-message {
+  color: #4caf50;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center;
+}
+
+
+#endMessage,
+#crow-drinking,
+#inspiration {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+button {
+  background-color: #87cefa;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #4682b4;
+}
+
+.read-aloud-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #87cefa;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.read-aloud-button:hover {
+  background-color: #4682b4;
+} 

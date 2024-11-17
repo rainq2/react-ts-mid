@@ -96,11 +96,23 @@ const Game1 = () => {
     }
   };
 
+  const handleReadAloud = () => {
+    if (currentScene) {
+      const utterance = new SpeechSynthesisUtterance(currentScene.text);
+      utterance.lang = 'zh-TW'; // 設置語言為中文（繁體）
+      window.speechSynthesis.speak(utterance);
+    }
+  };
+
+  const handleBackHome = () => {
+    window.speechSynthesis.cancel(); // 停止
+  };
+
   return (
     <div className="game">
       {/* 返回首頁按鈕 */}
       <div className="back-home">
-        <Link to="/" className="back-button">
+        <Link to="/" className="back-button" onClick={handleBackHome}>
           回首頁
         </Link>
       </div>
@@ -115,6 +127,10 @@ const Game1 = () => {
               </button>
             ))}
           </div>
+          {/* 朗讀按鈕 */}
+          <button onClick={handleReadAloud} className="read-aloud-button">
+            朗讀
+          </button>
         </div>
       ) : (
         <div>感謝遊玩！</div>

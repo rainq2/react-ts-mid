@@ -8,6 +8,8 @@ import Game3 from './Game3';
 import Game4 from './Game4';
 import Game5 from './Game5';
 import Game6 from './Game6';
+import Game7 from './Game7';
+import Game8 from './Game8';
 import book1 from './images/pig.jpg';
 import book2 from './images/redhat.jpg';
 import book3 from './images/princess.jpg';
@@ -50,7 +52,7 @@ function App() {
                             {/* 故事 1 */}
                             <StoryCard image={book1} title={'三隻小豬'} description={'三隻小豬的故事講述了三兄弟各自蓋房子的經歷。大豬和二豬為了省事，分別用稻草和木頭建造房子，而小豬則辛苦地用磚頭蓋了堅固的房子。當大野狼來襲時，稻草和木頭的房子都被輕易摧毀，只有小豬的磚房抵擋住了攻擊，最終三隻小豬在安全的磚房裡團聚，學到了堅持和努力的重要性。'} nevigate={'/game3'}></StoryCard>
                             {/* 故事 2 */}
-                            <StoryCard image={book2} title={'小紅帽'} description={'小紅帽的故事講述了一個小女孩帶著食物去看望生病的外婆，途中遇到了一隻狡猾的大野狼。大野狼騙走了小紅帽，趕到外婆家吞下外婆，然後假扮成外婆躺在床上等待小紅帽的到來。小紅帽發現外婆的樣子奇怪，於是靠近檢查，後來被大野狼吞下。幸好獵人及時趕來，成功救出了小紅帽和外婆。'} nevigate={'/game2'}></StoryCard>
+                            <StoryCard image={book2} title={'小紅帽'} description={'小紅帽的故事講述了一個小女孩帶著食物去看望生病的外婆，途中遇到了一隻狡猾的大野狼。大野狼騙走了小紅帽，趕到外婆家吞下外婆，然後假扮成外婆躺在床上等待小紅帽的到來。小紅帽發現外婆的樣子奇怪，後來被大野狼吞下。幸好獵人及時趕來，成功救出了小紅帽和外婆。'} nevigate={'/game2'}></StoryCard>
                             {/* 故事 3 */}
                             <StoryCard image={book3} title={'灰姑娘'} description={'灰姑娘是被繼母和繼姊妹虐待的善良女孩。王子舉辦舞會時，仙女教母用魔法幫助她變得美麗，並給她南瓜馬車，提醒她午夜前必須離開。灰姑娘在舞會上與王子共舞，兩人墜入愛河，但她在午夜鐘聲響起時匆忙離開，留下了一隻玻璃鞋。王子遍尋全國，最終兩人結婚過上幸福快樂的生活。'} nevigate={'/game'}></StoryCard>
                             {/* 故事 4 */}
@@ -62,9 +64,9 @@ function App() {
                             {/* 故事 7 */}
                             <StoryCard image={book7} title={'醜小鴨'} description={'醜小鴨因外貌異於其他小鴨，被大家排擠，孤單地離開家展開旅程。牠歷經寒冬與困難，堅持下來。到了春天，牠在湖中看到自己的倒影，才發現自己原來是一隻美麗的天鵝，不是醜陋的小鴨。這個故事告訴我們，不要因為困境而放棄，每個人都有屬於自己的價值與光芒，未來定能綻放出美麗與力量。'} nevigate={'/game6'}></StoryCard>
                             {/* 故事 8 */}
-                            <StoryCard image={book8} title={'龜兔賽跑'} description={'龜兔賽跑講述了一隻兔子和烏龜進行跑步比賽的故事。兔子仗著自己跑得快，途中輕敵休息，甚至睡著了；而烏龜雖然跑得慢，但始終堅持不懈地向前移動。當兔子醒來時，發現烏龜已經到達終點並贏得了比賽。這個故事傳達了一個重要的道理：自滿與輕視他人可能導致失敗，而腳踏實地、持之以恆的努力則能帶來成功。'} nevigate={'/game6'}></StoryCard>
+                            <StoryCard image={book8} title={'龜兔賽跑'} description={'龜兔賽跑講述了一隻兔子和烏龜進行跑步比賽的故事。兔子仗著自己跑得快，途中輕敵休息，甚至睡著了；而烏龜雖然跑得慢，但始終堅持不懈地向前移動。當兔子醒來時，發現烏龜已經到達終點並贏得了比賽。這個故事傳達了一個重要的道理：自滿與輕視他人可能導致失敗，而腳踏實地、持之以恆的努力則能帶來成功。'} nevigate={'/game7'}></StoryCard>
                             {/* 故事 9 */}
-                            <StoryCard image={book9} title={'金斧頭銀斧頭'} description={'從前有個樵夫在河邊砍柴，不小心把斧頭掉進河裡。他坐在河邊傷心，河神出現了，問他發生了什麼事。河神潛入水中，先拿出一把金斧頭問樵夫是不是他的，樵夫誠實地說不是；接著，河神拿出銀斧頭，樵夫仍說不是。最後，河神取出樵夫的普通斧頭，樵夫開心地認領。河神讚賞他的誠實，將金斧頭和銀斧頭也送給他。'} nevigate={'/game6'}></StoryCard>
+                            <StoryCard image={book9} title={'金斧頭銀斧頭'} description={'從前有個樵夫在河邊砍柴，不小心把斧頭掉進河裡。他坐在河邊傷心，河神出現了，問他發生了什麼事。河神潛入水中，先拿出一把金斧頭問樵夫是不是他的，樵夫誠實地說不是；接著，河神拿出銀斧頭，樵夫仍說不是。最後，河神取出樵夫的普通斧頭，樵夫開心地認領。河神讚賞他的誠實，將金斧頭和銀斧頭也送給他。'} nevigate={'/game8'}></StoryCard>
                           </div>
                         </section>
                       </div>
@@ -83,6 +85,8 @@ function App() {
         <Route path="/game4" element={<Game4 />} />
         <Route path="/game5" element={<Game5 />} />
         <Route path="/game6" element={<Game6 />} />
+        <Route path="/game7" element={<Game7 />} />
+        <Route path="/game8" element={<Game8 />} />
       </Routes>
     </Router>
   );

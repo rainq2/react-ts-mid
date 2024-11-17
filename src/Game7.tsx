@@ -5,61 +5,66 @@ import './Game.css';
 const scenes = [
   {
     id: 1,
-    text: '春天的池塘邊，鴨媽媽正在孵著蛋，不久後所有的小鴨寶寶都誕生了，但有一顆特別不一樣的蛋，一直都沒有孵出來。過了好幾天，這顆不一樣的蛋終於孵化了，出現了一隻與眾不同的小鴨，大家都嘲笑牠是「醜小鴨」。你的選擇是？',
+    text: '兔子和烏龜開始比賽，兔子跑得很快，烏龜慢慢爬。兔子看了看後面，烏龜離得還很遠。',
     options: [
-      { text: '接受嘲笑並試圖融入', nextSceneId: 2 },
-      { text: '選擇離開池塘流浪', nextSceneId: 3 },
+      { text: '兔子決定休息一下', nextSceneId: 2 },
+      { text: '兔子繼續往前跑', nextSceneId: 3 },
     ],
   },
   {
     id: 2,
-    text: '你試圖融入其他小鴨的生活，但牠們始終排擠你。鴨媽媽試著保護你，但你仍感到孤單。',
+    text: '兔子找了棵大樹，坐下來休息，覺得烏龜絕對追不上牠。',
     options: [
-      { text: '選擇離開池塘開始流浪', nextSceneId: 3 },
-      { text: '決定留在池塘忍受孤獨', nextSceneId: 4 },
+      { text: '兔子睡著了', nextSceneId: 4 },
+      { text: '兔子繼續監視烏龜的進度', nextSceneId: 5 },
     ],
   },
   {
     id: 3,
-    text: '你開始了漫長的流浪旅程，途中經歷了寒冷的冬天，幾乎失去希望。但你堅持下去，尋找自己的歸屬。',
+    text: '兔子一路狂奔，到了終點附近，卻因太驕傲而摔倒了！',
     options: [
-      { text: '繼續流浪，尋找新的池塘', nextSceneId: 5 },
-      { text: '選擇在洞穴中度過寒冬', nextSceneId: 6 },
+      { text: '嘗試站起來追趕', nextSceneId: 6 },
+      { text: '放棄比賽，承認失敗', nextSceneId: 7 },
     ],
   },
   {
     id: 4,
-    text: '你選擇留在池塘忍受孤獨。雖然孤單，但你學會了如何在逆境中成長。最終你找到了自己的價值。',
-    options: [],
+    text: '兔子睡著了，烏龜慢慢地超越了牠。',
+    options: [
+      { text: '兔子醒來後開始追趕', nextSceneId: 6 },
+      { text: '兔子放棄比賽', nextSceneId: 7 },
+    ],
   },
   {
     id: 5,
-    text: '你來到一片新的池塘，遇到了一群天鵝。牠們友善地接納了你，讓你感到溫暖和歸屬感。',
+    text: '兔子看著烏龜一步步向前，心想這速度根本不可能贏過自己。',
     options: [
-      { text: '嘗試融入天鵝群', nextSceneId: 7 },
-      { text: '害怕再次被拒絕，選擇離開', nextSceneId: 8 },
+      { text: '繼續觀望並休息', nextSceneId: 4 },
+      { text: '重新開始跑起來', nextSceneId: 3 },
     ],
   },
   {
     id: 6,
-    text: '在洞穴中度過寒冬後，春天來臨了。你走出了洞穴，看到湖面上倒映的身影，發現自己已經長成了一隻美麗的天鵝！',
+    text: '兔子拼命追趕，但烏龜憑著堅持和穩定的步伐，贏得了比賽！',
     options: [
-      { text: '接受自己的新身份，加入天鵝群', nextSceneId: 7 },
+      { text: '兔子祝賀烏龜並承認自己的錯誤', nextSceneId: 8 },
     ],
   },
   {
     id: 7,
-    text: '你終於找到了自己的歸屬。天鵝群歡迎你的加入，你學會了接受自己，也找到了屬於自己的朋友。',
-    options: [],
+    text: '兔子輸掉了比賽，牠開始思考自己失敗的原因。',
+    options: [
+      { text: '兔子學會了謙虛和努力的重要性', nextSceneId: 8 },
+    ],
   },
   {
     id: 8,
-    text: '你選擇了離開天鵝群，但心中仍感到遺憾。未來的日子裡，你決定用行動證明自己的價值，並努力成為更好的自己。',
+    text: '這次比賽教會了我們，堅持和穩定比驕傲和懶惰更重要。',
     options: [],
   },
 ];
 
-const Game6 = () => {
+const Game7 = () => {
   const [currentSceneId, setCurrentSceneId] = useState(1);
 
   const currentScene = scenes.find((scene) => scene.id === currentSceneId);
@@ -93,7 +98,7 @@ const Game6 = () => {
           回首頁
         </Link>
       </div>
-      <h1>醜小鴨</h1>
+      <h1>龜兔賽跑</h1>
       {/* 當前場景內容 */}
       {currentScene ? (
         <div className="scene">
@@ -123,4 +128,4 @@ const Game6 = () => {
   );
 };
 
-export default Game6;
+export default Game7;
