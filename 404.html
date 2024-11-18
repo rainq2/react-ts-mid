@@ -3,9 +3,9 @@
   <head>
     <meta http-equiv="refresh" content="0;url=/" />
     <script>
-      // 获取当前路径并重定向到正确的 React Router 路由
-      const redirectTo = window.location.pathname.replace('/react-ts-mid', '');
-      window.location.href = '/' + redirectTo;
+      // 动态重定向到正确路径
+      var path = window.location.pathname.replace('/react-ts-mid', '');
+      window.location.href = '/react-ts-mid' + path;
     </script>
   </head>
   <body></body>
