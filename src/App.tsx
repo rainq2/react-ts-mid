@@ -1,4 +1,3 @@
-import React from 'react';
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import './App.css';
 import Game from './Game'; // 引入遊戲元件

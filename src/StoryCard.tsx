@@ -1,5 +1,4 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 
 // ts是一種比較嚴格的語言，必須監督入資料是否為指定型態
 interface StoryCardProps {
