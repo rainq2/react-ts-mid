@@ -41,7 +41,7 @@ body {
 
 	body {
 		background: #252122;
-		background-image: url("images/bg02.png");
+
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -2016,7 +2016,7 @@ body {
 
 	#main {
 		position: relative;
-		background: #f7f7f7 url("images/bg02.png");
+		background: #f7f7f7 ;
 		padding: 4em 0 4em 0;
 	}
 
@@ -2033,7 +2033,7 @@ body {
 		}
 
 		#main .major h2 {
-			background: #f7f7f7 url("images/bg02.png");
+			background: #f7f7f7 ;
 		}
 
 /* Footer */
@@ -2380,8 +2380,7 @@ body {
 				top: 0;
 				width: 275px;
 				z-index: 10002;
-				color: #858484;
-				background-image: url("images/bg02.png");
+				color: #858484;;
 				box-shadow: inset -3px 0px 5px 0px rgba(0, 0, 0, 0.35);
 			}
 
