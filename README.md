@@ -1,4 +1,4 @@
-# 第ㄧ組期中專案-Story Book
+# 第ㄧ組期中專案(協助)-Story Book
 體驗網址：
 https://rainq2.github.io/react-ts-mid/
 ## 網站的設計概念
